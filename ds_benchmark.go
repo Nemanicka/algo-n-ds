@@ -337,8 +337,7 @@ func toInt(str string) int {
 func main() {
     println(len(os.Args))
     if len(os.Args) < 4 {
-        usageStr := `Usage: go run ds_benchmark.go <seed> <data length> 
-                    <max element (data range)>, <order(-1, 0, 1, where - - unordered)>\n`
+        usageStr := "Usage: go run ds_benchmark.go <seed> <data length> \\ \n       <max element (data range)>, <order(-1, 0, 1, where 0 - unordered)>\n"
         fmt.Printf(usageStr)
         return
     }
